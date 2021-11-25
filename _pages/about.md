@@ -7,6 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+{% include base_path %}
 
 I'm currently a postdoctoral researcher of computer science at Zhejiang University. My current research interest is computer vision, including video understanding, visual generation, and metric learning.
 
@@ -20,16 +21,12 @@ Education
 
 Publications
 =======
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+ <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 Awards
 =======
-{% include base_path %}
-
-{% for post in site.awards reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+ <ul>{% for post in site.awards %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
