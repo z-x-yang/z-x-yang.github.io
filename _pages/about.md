@@ -12,14 +12,14 @@ About Me
   I'm currently a postdoctoral researcher of computer science at Zhejiang University. My current research interest is computer vision, including video understanding, visual generation, and metric learning.
 
 
-
+<br />
 Education
 =======
 * Ph.D in Computer Science, University of Technology Sydney, Australia, 2021
 * B.S. in Electronic and Information Engineering, University of Science and Technology of China, 2018
 
 
-
+<br />
 Publications
 =======
 {% include base_path %}
@@ -28,6 +28,7 @@ Publications
   {% include archive-single.html %}
 {% endfor %}
 
+<br />
 Awards
 =======
 {% include base_path %}
