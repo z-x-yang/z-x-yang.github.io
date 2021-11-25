@@ -13,13 +13,13 @@ I'm currently a postdoctoral researcher of computer science at Zhejiang Universi
 
 
 Education
-======
+-------
 * B.S. in Electronic and Information Engineering, University of Science and Technology of China, 2018
 * Ph.D in Computer Science, University of Technology Sydney, Australia, 2021
 
 
 Publications
-=======
+-------
 {% include base_path %}
 
 {% for post in site.publications reversed %}
@@ -27,7 +27,7 @@ Publications
 {% endfor %}
 
 Awards
-=======
+-------
 {% include base_path %}
 
 {% for post in site.awards reversed %}
