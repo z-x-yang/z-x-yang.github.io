@@ -21,12 +21,7 @@ Education
 
 Publications
 =======
- <ul>{% for post in site.publications %}
+ {% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}
 
-Awards
-=======
- <ul>{% for post in site.awards %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
