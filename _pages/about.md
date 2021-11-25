@@ -13,6 +13,7 @@ About Me
 
 
 <br />
+
 Education
 =======
 * Ph.D in Computer Science, University of Technology Sydney, Australia, 2021
@@ -20,6 +21,7 @@ Education
 
 
 <br />
+
 Publications
 =======
 {% include base_path %}
@@ -29,6 +31,7 @@ Publications
 {% endfor %}
 
 <br />
+
 Awards
 =======
 {% include base_path %}
