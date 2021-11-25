@@ -1,8 +1,8 @@
 ---
-title: "Very Long Natural Scenery Image Prediction by Outpainting<br>Zongxin Yang, Jian Dong, Ping Liu, Yi Yang, Shuicheng Yan"
+title: "Very Long Natural Scenery Image Prediction by Outpainting"
 collection: publications
 # permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: '<a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Yang_Very_Long_Natural_Scenery_Image_Prediction_by_Outpainting_ICCV_2019_paper.pdf">PDF</a>'
+excerpt: 'temp'
 date: 2019-01-01
 venue: 'ICCV'
 # paperurl: 'http://academicpages.github.io/files/paper1.pdf'
