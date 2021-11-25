@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Zongxin Yang"
-  avatar           : "profile.png"
+  avatar           : # "profile.png"
   bio              : "Postdoctoral Researcher of Computer Science"
   location         : "Zhejiang University"
   employer         :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/z-x-yang"
+  github           : "z-x-yang"
   google_plus      :
   keybase          :
   instagram        :
