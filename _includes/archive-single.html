@@ -27,7 +27,7 @@
     {% endif %}
 
     {% if post.collection == 'awards' %}
-      {{ title }}
+      {{ title }} {% if post.report %}[<a href="{{post.report}}">Report</a>]{% endif %}
     {% else %}
       <h2 class="archive__item-title" itemprop="headline">
         {% if post.link %}
