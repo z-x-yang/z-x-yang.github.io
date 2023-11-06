@@ -9,7 +9,7 @@ redirect_from:
 ---
 About Me
 =======
-  I'm currently a postdoctoral researcher in computer science at Zhejiang University. My current research interest is computer vision, including video understanding, visual generation, and metric learning.
+  I'm currently a postdoctoral researcher in computer science at Zhejiang University. My current research interest is computer vision, including vision (image/video/3D) generation, 3D/4D (3D/3D+video) vision, object-centric perception/reconstruction/reasoning, cross-modal learning, etc.
 
 
 <br />
