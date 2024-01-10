@@ -9,20 +9,20 @@ redirect_from:
 ---
 About Me
 =======
-  I'm currently a postdoctoral researcher in computer science at Zhejiang University. My current research interest is computer vision, including vision (image/video/3D) generation, 3D/4D (3D/3D+video) vision, object-centric perception/reconstruction/reasoning, cross-modal learning, etc.
+  I'm currently a postdoctoral researcher in CCAI, college of computer science, at Zhejiang University. My current research interest is computer vision, including vision generation, 3D vision, object-centric understanding, cross-modal learning, etc.
 
 
 <br />
 
 Education
 =======
-* Ph.D in Computer Science, University of Technology Sydney, Australia, 2021
+* Ph.D in Computer Science, University of Technology Sydney, Australia, 2021. Supervised by Prof. Yi Yang.
 * B.S. in Electronic and Information Engineering, University of Science and Technology of China, 2018
 
 
 <br />
 
-Publications
+Selected Publications
 =======
 {% include base_path %}
 
@@ -32,7 +32,7 @@ Publications
 
 <br />
 
-Awards
+Selected Awards
 =======
 {% include base_path %}
 
