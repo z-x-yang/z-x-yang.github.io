@@ -158,7 +158,7 @@
         <div class="container has-text-centered">
           <h1 class="title is-2 publication-title">
             <br>
-            <a style="color: #479ee1;">DoraemonGPT</a>: Toward Understanding Dynamic Scenes </br> with Large Language Models
+            <a style="color: #479ee1;">DoraemonGPT</a>: Toward Understanding Dynamic Scenes </br> with Large Language Models </br> (Exemplified as A Video Agent)
           </h1>
           <div class="is-size-5 publication-authors">
             <div class="author-block">
@@ -178,6 +178,9 @@
           </div>
           <div class="is-size-5 publication-authors">
             <sup>✉</sup>Corresponding Author
+          </div>
+          <div class="is-size-5 publication-authors">
+            <b>ICML 2024</b>
           </div>
 
           <div class="column has-text-centered">
@@ -223,7 +226,7 @@
               <img src="assets/overview.png">
             </a>
             <p class="caption" style="margin-bottom: 1px;  text-align: justify">
-              Given a video with a question/task, DoraemonGPT first extracts a Task-related Symbolic Memory, which has two types of memory for selection: space-dominant memory based on instances and time-dominant memory based on time frames/clips. The memory can be queried by sub-task tools, which are driven by LLMs with different prompts and generate symbolic language (i.e., SQL sentences) to do different reasoning. Also, other tools for querying external knowledge or utility tools are supported. For planning, DoraemonGPT employs the MCTS Planner to decompose the question into an action sequence by exploring multiple feasible N solutions, which can be further summarized into an informative answer.
+              <b>Overview.</b> Given a video with a question/task, DoraemonGPT first extracts a Task-related Symbolic Memory, which has two types of memory for selection: space-dominant memory based on instances and time-dominant memory based on time frames/clips. The memory can be queried by sub-task tools, which are driven by LLMs with different prompts and generate symbolic language (i.e., SQL sentences) to do different reasoning. Also, other tools for querying external knowledge or utility tools are supported. For planning, DoraemonGPT employs the MCTS Planner to decompose the question into an action sequence by exploring multiple feasible N solutions, which can be further summarized into an informative answer.
             </p>
           </figure>
         </center>
@@ -240,7 +243,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Recent LLM-driven visual agents mainly focus on solving image-based tasks, which limits their ability to understand dynamic scenes, making it far from real-life applications like guiding students in laboratory experiments and identifying their mistakes. Considering the video modality better reflects the ever-changing nature of real-world scenarios, we devise DoraemonGPT, a comprehensive and conceptually elegant system driven by LLMs to handle dynamic video tasks. Given a video with a question/task, DoraemonGPT begins by converting the input video into a symbolic memory that stores task-related attributes. This structured representation allows for spatial-temporal querying and reasoning by well-designed sub-task tools, resulting in concise intermediate results. Recognizing that LLMs have limited internal knowledge when it comes to specialized domains (e.g., analyzing the scientific principles underlying experiments), we incorporate plug-and-play tools to assess external knowledge and address tasks across different domains. Moreover, a novel LLM-driven planner based on Monte Carlo Tree Search is introduced to explore the large planning space for scheduling various tools. The planner iteratively finds feasible solutions by backpropagating the result's reward, and multiple solutions can be summarized into an improved final answer. We extensively evaluate DoraemonGPT's effectiveness on three benchmarks and challenging in-the-wild scenarios.
+              Recent LLM-driven visual agents mainly focus on solving image-based tasks, which limits their ability to understand dynamic scenes, making it far from real-life applications like guiding students in laboratory experiments and identifying their mistakes. Hence, this paper explores DoraemonGPT, a comprehensive and conceptually elegant system driven by LLMs to understand dynamic scenes. Considering the video modality better reflects the ever-changing nature of real-world scenarios, we exemplify DoraemonGPT as a video agent. Given a video with a question/task, DoraemonGPT begins by converting the input video into a symbolic memory that stores task-related attributes. This structured representation allows for spatial-temporal querying and reasoning by well-designed sub-task tools, resulting in concise intermediate results. Recognizing that LLMs have limited internal knowledge when it comes to specialized domains (e.g., analyzing the scientific principles underlying experiments), we incorporate plug-and-play tools to assess external knowledge and address tasks across different domains. Moreover, a novel LLM-driven planner based on Monte Carlo Tree Search is introduced to explore the large planning space for scheduling various tools. The planner iteratively finds feasible solutions by backpropagating the result's reward, and multiple solutions can be summarized into an improved final answer. We extensively evaluate DoraemonGPT's effectiveness on three benchmarks and several in-the-wild scenarios.
             </p>
           </div>
         </div>
@@ -366,7 +369,7 @@
     <div class="container content is-max-desktop">
       <h2 class="title">BibTeX</h2>
       <pre><code>@inproceedings{yang2024doraemongpt,
-    title={Doraemongpt: Toward understanding dynamic scenes with large language models},
+    title={Doraemongpt: Toward understanding dynamic scenes with large language models (exemplified as a video agent)},
     author={Yang, Zongxin and Chen, Guikun and Li, Xiaodi and Wang, Wenguan and Yang, Yi},
     booktitle={ICML},
     year={2024},
