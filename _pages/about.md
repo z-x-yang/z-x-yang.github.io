@@ -9,7 +9,7 @@ redirect_from:
 ---
 About Me
 =======
-  I'm currently a postdoctoral researcher in CCAI, college of computer science, at Zhejiang University. My current research interest is computer vision, including multi-modal learning, vision generation, 3D vision, object-centric understanding, etc.
+  I am presently a postdoctoral researcher at Harvard University. My research interests include artificial intelligence, with a focus on multi-modal learning, generative models, 3D vision, and their applications in biomedical fields.
 
 
 <br />
@@ -17,7 +17,7 @@ About Me
 Education
 =======
 * Ph.D in Computer Science, University of Technology Sydney, Australia, 2021. Supervised by Prof. Yi Yang.
-* B.S. in Electronic and Information Engineering, University of Science and Technology of China, 2018
+* B.S. in Electronic and Information Engineering, University of Science and Technology of China, China, 2018.
 
 
 <br />
