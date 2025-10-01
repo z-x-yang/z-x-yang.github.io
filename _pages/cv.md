@@ -9,11 +9,15 @@ redirect_from:
 
 {% include base_path %}
 
+<p>
+  <a class="btn" href="{{ base_path }}/files/cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+  <span class="small">(coming soon)</span>
+</p>
+
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Computer Science, University of Technology Sydney, Australia, 2021. Supervised by Prof. Yi Yang.
+* B.S. in Electronic and Information Engineering, University of Science and Technology of China, 2018.
 
 Work experience
 ======
@@ -42,17 +46,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<!-- Talks / Teaching sections intentionally hidden per current content policy -->
   
 Service and leadership
 ======

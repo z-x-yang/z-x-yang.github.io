@@ -72,3 +72,5 @@ vendor/bundle/
 
 # Local development
 start_local.sh
+Gemfile.lock
+.gitignore

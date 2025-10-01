@@ -1,0 +1,27 @@
+{% include base_path %}
+
+{% assign items = site.data.updates | reverse %}
+{% if include.limit %}
+  {% assign items = items | slice: 0, include.limit %}
+{% endif %}
+
+<div class="updates">
+  <div style="display:flex;align-items:center;justify-content:space-between;">
+    <h2 class="archive__subtitle" style="margin:0;">Recent Updates</h2>
+    <a href="{{ base_path }}/updates/">See more</a>
+  </div>
+  <ul>
+  {% for u in items %}
+    <li>
+      <strong>{{ u.date }}</strong>: 
+      {% if u.link %}
+        <a href="{{ u.link }}">{{ u.text }}</a>
+      {% else %}
+        {{ u.text }}
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+

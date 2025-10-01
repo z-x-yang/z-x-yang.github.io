@@ -81,9 +81,9 @@ analytics:
 # Site Author
 author:
   name             : "Dr. Zongxin Yang"
-  avatar           : # "profile.png"
+  avatar           : "bio_photo.jpg"
   bio              : "Postdoctoral Researcher"
-  location         : "Harvard University"
+  location         :
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=8IE0CfwAAAAJ&hl=en"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "zongxin-yang-63033a292"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :

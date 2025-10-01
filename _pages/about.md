@@ -7,18 +7,16 @@ redirect_from:
   - /about/
   - /about.html
 ---
-About Me
-=======
-  I am presently a postdoctoral researcher at Harvard University. My research interests include artificial intelligence, with a focus on multi-modal learning, generative models, 3D vision, and their applications in biomedical fields.
-
+About
+=====
+  I am a postdoctoral researcher focused on building reliable AI systems for the real world. My research spans two complementary tracks:
+  
+  - Multimodal Generation and Understanding: advancing generative modeling and multimodal alignment across 3D, video, and audio, with an emphasis on controllability, robustness, and data efficiency.
+  - Biomedical AI (Medical Imaging & EHR): developing methods for medical image segmentation/understanding and electronic health record analysis, toward interpretable, transferable clinical intelligence.
 
 <br />
 
-Education
-=======
-* Ph.D in Computer Science, University of Technology Sydney, Australia, 2021. Supervised by Prof. Yi Yang.
-* B.S. in Electronic and Information Engineering, University of Science and Technology of China, China, 2018.
-
+{% include updates.html limit=5 %}
 
 <br />
 
