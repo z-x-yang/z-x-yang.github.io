@@ -26,7 +26,7 @@ Publications
   {% endfor %}</ul>
   
 <!-- Talks / Teaching sections intentionally hidden per current content policy -->
-  
+
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Invited Area Chair (AC), ECCV 2026, CVPR 2026
