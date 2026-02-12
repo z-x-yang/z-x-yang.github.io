@@ -8,6 +8,15 @@
     {% if post.topic %}
       <span class="pub-chip pub-chip--topic">{{ post.topic }}</span>
     {% endif %}
+    {% if post.venue contains 'Best Paper' %}
+      <span class="pub-chip pub-chip--highlight">Best Paper</span>
+    {% elsif post.venue contains 'Spotlight' %}
+      <span class="pub-chip pub-chip--highlight">Spotlight</span>
+    {% elsif post.venue contains 'Oral' %}
+      <span class="pub-chip pub-chip--highlight">Oral</span>
+    {% elsif post.venue contains 'Highlight' %}
+      <span class="pub-chip pub-chip--highlight">Highlight</span>
+    {% endif %}
   </div>
 
   <h3 class="pub-card__title">{{ post.title }}</h3>

@@ -9,7 +9,7 @@ author_profile: true
 {% assign sorted_pubs = site.publications | sort: "pub_year" | reverse %}
 
 ## Translational Biomedical AI
-I focus on translational AI systems that bridge methodological advances and deployable clinical value, including medical imaging foundation models, EHR intelligence, and scalable biomedical data understanding.
+I focus on translational AI systems that bridge methodological advances and deployable clinical value, including medical imaging foundation models, EHR intelligence, and scalable biomedical data understanding (including emerging modalities such as single-cell data).
 
 <div class="pub-grid">
   {% assign shown = 0 %}
