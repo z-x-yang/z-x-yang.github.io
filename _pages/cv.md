@@ -21,7 +21,8 @@ Education
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+{% assign sorted_pubs = site.publications | sort: "pub_year" | reverse %}
+  <ul>{% for post in sorted_pubs %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   

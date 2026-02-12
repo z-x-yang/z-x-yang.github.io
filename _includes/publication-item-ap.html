@@ -1,0 +1,26 @@
+{% include base_path %}
+
+<div class="pub-card">
+  <div class="pub-card__header">
+    {% if post.pub_year %}
+      <span class="pub-chip pub-chip--year">{{ post.pub_year }}</span>
+    {% endif %}
+    {% if post.topic %}
+      <span class="pub-chip pub-chip--topic">{{ post.topic }}</span>
+    {% endif %}
+  </div>
+
+  <h3 class="pub-card__title">{{ post.title }}</h3>
+  {% if post.author %}
+    <p class="pub-card__authors">{{ post.author }}</p>
+  {% endif %}
+
+  <p class="pub-card__venue">{{ post.venue }}</p>
+
+  <p class="pub-card__links">
+    {% if post.project %}<a href="{{ post.project }}" target="_blank" rel="noopener">Project</a>{% endif %}
+    {% if post.review %} · <a href="{{ post.review }}" target="_blank" rel="noopener">Review</a>{% endif %}
+    {% if post.pdf %} · <a href="{{ post.pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+    {% if post.code %} · <a href="{{ post.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+  </p>
+</div>
