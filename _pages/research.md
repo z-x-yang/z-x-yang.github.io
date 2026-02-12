@@ -8,6 +8,13 @@ author_profile: true
 {% include base_path %}
 {% assign sorted_pubs = site.publications | sort: "pub_year" | reverse %}
 
+## Research Agenda (2026–2030)
+- Build clinically reliable AI systems that integrate imaging, EHR, and emerging biomedical modalities (e.g., single-cell) for decision support and translational impact.
+- Develop controllable multimodal generative models as compositional tools for simulation, synthesis, and hypothesis-driven data generation.
+- Advance multimodal perception and understanding in dynamic environments, with emphasis on temporal robustness and scalable deployment.
+
+I view these three tracks as one connected agenda: stronger perception improves controllability, and controllable models accelerate translational biomedical applications.
+
 ## Translational Biomedical AI
 I focus on translational AI systems that bridge methodological advances and deployable clinical value, including medical imaging foundation models, EHR intelligence, and scalable biomedical data understanding (including emerging modalities such as single-cell data).
 
@@ -46,5 +53,8 @@ I study scene understanding in dynamic environments through segmentation, tracki
     {% endif %}
   {% endfor %}
 </div>
+
+### Collaboration
+I welcome collaborations on clinically grounded AI, controllable multimodal generation, and robust scene understanding. If your interests align, feel free to reach out by email.
 
 <p><a href="{{ base_path }}/publications/">View all publications by track →</a></p>

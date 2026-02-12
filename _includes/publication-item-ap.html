@@ -8,6 +8,9 @@
     {% if post.topic %}
       <span class="pub-chip pub-chip--topic">{{ post.topic }}</span>
     {% endif %}
+    {% if post.author_role %}
+      <span class="pub-chip pub-chip--role">{{ post.author_role }}</span>
+    {% endif %}
     {% if post.venue contains 'Best Paper' %}
       <span class="pub-chip pub-chip--highlight">Best Paper</span>
     {% elsif post.venue contains 'Spotlight' %}
