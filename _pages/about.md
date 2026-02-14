@@ -27,7 +27,7 @@ My work is organized around three connected research directions:
 
 <div class="research-track">
   <h3>1) Translational Biomedical AI</h3>
-  <p>Building clinically useful AI systems across medical imaging, EHR intelligence, and next-generation biomedical data modalities.</p>
+  <p>Building biology-informed and clinically grounded AI systems across medical imaging, EHR intelligence, and translational biomedical settings.</p>
   <p class="track-meta">{{ biomed | size }} papers</p>
 </div>
 
