@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am a Postdoctoral Researcher at Harvard University, working on reliable and controllable AI systems for high-impact real-world use.
+I am a Postdoctoral Researcher at Harvard University, increasingly focused on biomedical AI.
+My research builds reliable and controllable multimodal learning and generation methods, with growing emphasis on translational biomedical applications.
 
 {% assign total_pubs = site.publications | size %}
 {% assign selected = site.publications | where: "selected", true | sort: "pub_year" | reverse %}
