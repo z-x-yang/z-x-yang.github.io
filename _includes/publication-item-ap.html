@@ -1,16 +1,47 @@
 {% include base_path %}
 
+{% assign display_year = post.pub_year %}
+{% if display_year == nil or display_year == "" %}
+  {% if post.date %}
+    {% assign display_year = post.date | date: "%Y" %}
+  {% else %}
+    {% assign display_year = "Year N/A" %}
+  {% endif %}
+{% endif %}
+
+{% assign display_venue = post.venue %}
+{% if display_venue == nil or display_venue == "" %}
+  {% assign display_venue = "Venue N/A" %}
+{% endif %}
+
 <div class="pub-card">
-  <div class="pub-card__header">
-    {% if post.pub_year %}
-      <span class="pub-chip pub-chip--year">{{ post.pub_year }}</span>
-    {% endif %}
+  <h3 class="pub-card__title">{{ post.title }}</h3>
+
+  <p class="pub-card__meta">
+    <span class="pub-card__venue">{{ display_venue }}</span>
+    <span class="pub-card__dot">•</span>
+    <span class="pub-card__year">{{ display_year }}</span>
+  </p>
+
+  {% if post.author %}
+    <p class="pub-card__authors">{{ post.author }}</p>
+  {% endif %}
+
+  {% assign has_chips = false %}
+  {% if post.topic or post.author_role or post.venue contains 'Best Paper' or post.venue contains 'Spotlight' or post.venue contains 'Oral' or post.venue contains 'Highlight' %}
+    {% assign has_chips = true %}
+  {% endif %}
+
+  {% if has_chips %}
+  <div class="pub-card__chips">
     {% if post.topic %}
       <span class="pub-chip pub-chip--topic">{{ post.topic }}</span>
     {% endif %}
+
     {% if post.author_role %}
       <span class="pub-chip pub-chip--role">{{ post.author_role }}</span>
     {% endif %}
+
     {% if post.venue contains 'Best Paper' %}
       <span class="pub-chip pub-chip--highlight">Best Paper</span>
     {% elsif post.venue contains 'Spotlight' %}
@@ -21,18 +52,19 @@
       <span class="pub-chip pub-chip--highlight">Highlight</span>
     {% endif %}
   </div>
-
-  <h3 class="pub-card__title">{{ post.title }}</h3>
-  {% if post.author %}
-    <p class="pub-card__authors">{{ post.author }}</p>
   {% endif %}
 
-  <p class="pub-card__venue">{{ post.venue }}</p>
+  {% assign has_links = false %}
+  {% if post.pdf or post.code or post.project or post.review %}
+    {% assign has_links = true %}
+  {% endif %}
 
+  {% if has_links %}
   <p class="pub-card__links">
-    {% if post.project %}<a href="{{ post.project }}" target="_blank" rel="noopener">Project</a>{% endif %}
-    {% if post.review %} · <a href="{{ post.review }}" target="_blank" rel="noopener">Review</a>{% endif %}
-    {% if post.pdf %} · <a href="{{ post.pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-    {% if post.code %} · <a href="{{ post.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+    {% if post.pdf %}<a class="pub-link" href="{{ post.pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+    {% if post.code %}<a class="pub-link" href="{{ post.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+    {% if post.project %}<a class="pub-link" href="{{ post.project }}" target="_blank" rel="noopener">Project</a>{% endif %}
+    {% if post.review %}<a class="pub-link" href="{{ post.review }}" target="_blank" rel="noopener">Review</a>{% endif %}
   </p>
+  {% endif %}
 </div>
