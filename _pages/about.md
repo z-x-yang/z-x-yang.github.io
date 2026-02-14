@@ -33,13 +33,13 @@ My work is organized around three connected research directions:
 
 <div class="research-track">
   <h3>2) Controllable Multimodal Generation</h3>
-  <p>Developing controllable generative models for image/video/3D content creation with strong compositionality and reliability.</p>
+  <p>Developing controllable multimodal generation methods for image, video, and 3D content, with emphasis on compositionality, reliability, and practical usability.</p>
   <p class="track-meta">{{ gen | size }} papers</p>
 </div>
 
 <div class="research-track">
   <h3>3) Multimodal Perception and Understanding</h3>
-  <p>Advancing dynamic scene understanding through segmentation, tracking, and multimodal reasoning in complex environments.</p>
+  <p>Advancing multimodal perception and understanding for dynamic environments through segmentation, tracking, and reasoning with robust temporal consistency.</p>
   <p class="track-meta">{{ perception | size }} papers</p>
 </div>
 
