@@ -35,31 +35,31 @@
 
 .pub-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 0.8rem 0 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.1rem;
+  margin: 0.85rem 0 1.6rem;
 }
 
 .pub-card {
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 0.95rem 1rem;
+  border: 1px solid #dfe3e8;
+  border-radius: 12px;
+  padding: 1.02rem 1.05rem;
   background: #fff;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
+  gap: 0.6rem;
   transition: transform 140ms ease, box-shadow 140ms ease;
 }
 
 .pub-card:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.07);
 }
 
 .pub-card__title {
-  font-size: 1rem;
-  line-height: 1.35;
+  font-size: 1.02rem;
+  line-height: 1.38;
   margin: 0;
   color: #111827;
   display: -webkit-box;
@@ -70,40 +70,40 @@
 
 .pub-card__meta {
   margin: 0;
-  font-size: 0.84rem;
-  color: #374151;
-  font-weight: 550;
+  font-size: 0.86rem;
+  color: #334155;
+  font-weight: 560;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.42rem;
 }
 
 .pub-card__dot {
-  color: #9ca3af;
+  color: #94a3b8;
 }
 
 .pub-card__authors {
   margin: 0;
-  font-size: 0.84rem;
-  line-height: 1.45;
-  color: #4b5563;
+  font-size: 0.83rem;
+  line-height: 1.5;
+  color: #475569;
 }
 
 .pub-card__chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-top: 0.05rem;
+  gap: 0.36rem;
+  margin-top: 0.12rem;
 }
 
 .pub-chip {
   font-size: 0.72rem;
   line-height: 1.2;
   border-radius: 999px;
-  padding: 0.16rem 0.55rem;
-  border: 1px solid #d1d5db;
+  padding: 0.17rem 0.56rem;
+  border: 1px solid #d4d8de;
   background: #f9fafb;
-  color: #374151;
+  color: #334155;
 }
 
 .pub-chip--topic {
@@ -128,24 +128,24 @@
   margin: auto 0 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: 0.5rem;
 }
 
 .pub-link {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.76rem;
   line-height: 1.2;
-  border: 1px solid #d1d5db;
+  border: 1px solid #cfd7e3;
   border-radius: 999px;
-  padding: 0.2rem 0.5rem;
+  padding: 0.24rem 0.58rem;
   color: #0f172a;
   text-decoration: none;
-  background: #ffffff;
+  background: #f8fafc;
 }
 
 .pub-link:hover {
   border-color: #93c5fd;
-  background: #f8fbff;
+  background: #f0f8ff;
 }
 
 .section-jump a {
