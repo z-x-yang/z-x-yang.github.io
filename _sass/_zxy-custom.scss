@@ -58,10 +58,10 @@
 }
 
 .pub-card__title {
-  font-size: 1.02rem;
+  font-size: 1.04rem;
   line-height: 1.38;
   margin: 0;
-  color: #111827;
+  color: #0f172a;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -70,7 +70,7 @@
 
 .pub-card__meta {
   margin: 0;
-  font-size: 0.86rem;
+  font-size: 0.85rem;
   color: #334155;
   font-weight: 560;
   display: flex;
@@ -84,9 +84,9 @@
 
 .pub-card__authors {
   margin: 0;
-  font-size: 0.83rem;
-  line-height: 1.5;
-  color: #475569;
+  font-size: 0.81rem;
+  line-height: 1.52;
+  color: #64748b;
 }
 
 .pub-card__chips {
@@ -97,10 +97,10 @@
 }
 
 .pub-chip {
-  font-size: 0.72rem;
+  font-size: 0.71rem;
   line-height: 1.2;
   border-radius: 999px;
-  padding: 0.17rem 0.56rem;
+  padding: 0.16rem 0.55rem;
   border: 1px solid #d4d8de;
   background: #f9fafb;
   color: #334155;
