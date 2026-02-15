@@ -11,36 +11,23 @@ redirect_from:
 I am a Postdoctoral Researcher at Harvard University, increasingly focused on biomedical AI.
 My research builds reliable and controllable multimodal learning and generation methods, with growing emphasis on translational biomedical applications.
 
-{% assign total_pubs = site.publications | size %}
 {% assign selected = site.publications | where: "selected", true | sort: "pub_year" | reverse %}
-{% assign biomed = site.publications | where: "topic", "Translational Biomedical AI" %}
-{% assign gen = site.publications | where: "topic", "Controllable Multimodal Generation" %}
-{% assign perception = site.publications | where: "topic", "Multimodal Perception and Understanding" %}
-
-<div class="hero-stats">
-  <span>{{ total_pubs }} Publications</span>
-  <span>{{ selected | size }} Selected Highlights</span>
-  <span>3 Research Tracks</span>
-</div>
 
 My work is organized around three connected research directions:
 
 <div class="research-track">
   <h3>1) Translational Biomedical AI</h3>
   <p>Building biology-informed and clinically grounded AI systems across medical imaging, EHR intelligence, and translational biomedical settings.</p>
-  <p class="track-meta">{{ biomed | size }} papers</p>
 </div>
 
 <div class="research-track">
   <h3>2) Controllable Multimodal Generation</h3>
   <p>Developing controllable multimodal generation methods for image, video, and 3D content, with emphasis on compositionality, reliability, and practical usability.</p>
-  <p class="track-meta">{{ gen | size }} papers</p>
 </div>
 
 <div class="research-track">
   <h3>3) Multimodal Perception and Understanding</h3>
   <p>Advancing multimodal perception and understanding for dynamic environments through segmentation, tracking, and reasoning with robust temporal consistency.</p>
-  <p class="track-meta">{{ perception | size }} papers</p>
 </div>
 
 <p class="section-jump">
