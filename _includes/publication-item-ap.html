@@ -9,9 +9,24 @@
   {% endif %}
 {% endif %}
 
+{% assign highlight_label = post.highlight %}
+{% if highlight_label == nil or highlight_label == "" %}
+  {% if post.venue contains 'Best Paper' %}
+    {% assign highlight_label = 'Best Paper' %}
+  {% elsif post.venue contains 'Spotlight' %}
+    {% assign highlight_label = 'Spotlight' %}
+  {% elsif post.venue contains 'Oral' %}
+    {% assign highlight_label = 'Oral' %}
+  {% elsif post.venue contains 'Highlight' %}
+    {% assign highlight_label = 'Highlight' %}
+  {% endif %}
+{% endif %}
+
 {% assign display_venue = post.venue %}
 {% if display_venue == nil or display_venue == "" %}
   {% assign display_venue = "Venue N/A" %}
+{% else %}
+  {% assign display_venue = display_venue | replace: "<font color=red><b>(Best Paper Award)</b></font>", "" | replace: "(Best Paper Award)", "" | replace: "(Best Paper)", "" | strip %}
 {% endif %}
 
 <div class="pub-card">
@@ -28,7 +43,7 @@
   {% endif %}
 
   {% assign has_chips = false %}
-  {% if post.topic or post.author_role or post.venue contains 'Best Paper' or post.venue contains 'Spotlight' or post.venue contains 'Oral' or post.venue contains 'Highlight' %}
+  {% if post.topic or post.author_role or highlight_label %}
     {% assign has_chips = true %}
   {% endif %}
 
@@ -42,14 +57,8 @@
       <span class="pub-chip pub-chip--role">{{ post.author_role }}</span>
     {% endif %}
 
-    {% if post.venue contains 'Best Paper' %}
-      <span class="pub-chip pub-chip--highlight">Best Paper</span>
-    {% elsif post.venue contains 'Spotlight' %}
-      <span class="pub-chip pub-chip--highlight">Spotlight</span>
-    {% elsif post.venue contains 'Oral' %}
-      <span class="pub-chip pub-chip--highlight">Oral</span>
-    {% elsif post.venue contains 'Highlight' %}
-      <span class="pub-chip pub-chip--highlight">Highlight</span>
+    {% if highlight_label %}
+      <span class="pub-chip pub-chip--highlight{% if highlight_label == 'Best Paper' %} pub-chip--best-paper{% endif %}">{{ highlight_label }}</span>
     {% endif %}
   </div>
   {% endif %}
