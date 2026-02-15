@@ -44,9 +44,30 @@ My work is organized around three connected research directions:
 
 ## Selected Publications
 
+{% assign catr_title = "CATR: Combinatorial-Dependence Audio-Queried Transformer for Audio-Visual Video Segmentation" %}
+{% assign catr_pub = selected | where: "title", catr_title | first %}
+
 <div class="pub-grid">
-{% for post in selected limit: 12 %}
+{% if catr_pub %}
+  {% assign post = catr_pub %}
   {% include publication-item-ap.html %}
+{% endif %}
+
+{% assign shown = 0 %}
+{% if catr_pub %}
+  {% assign regular_limit = 11 %}
+{% else %}
+  {% assign regular_limit = 12 %}
+{% endif %}
+
+{% for post in selected %}
+  {% if post.title != catr_title %}
+    {% include publication-item-ap.html %}
+    {% assign shown = shown | plus: 1 %}
+    {% if shown >= regular_limit %}
+      {% break %}
+    {% endif %}
+  {% endif %}
 {% endfor %}
 </div>
 
