@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am a Postdoctoral Researcher at Harvard University, increasingly focused on biomedical AI.
+I am a Research Fellow in the Department of Biomedical Informatics (DBMI) at Harvard Medical School, Harvard University, working with Prof. Tianxi Cai.
+Previously, I was a postdoctoral researcher at the College of Computer Science and Technology, Zhejiang University (2021–2024), advised by Prof. Yi Yang.
 My research builds reliable and controllable multimodal learning and generation methods, with growing emphasis on translational biomedical applications.
 
 {% assign selected = site.publications | where: "selected", true | sort: "pub_year" | reverse %}
