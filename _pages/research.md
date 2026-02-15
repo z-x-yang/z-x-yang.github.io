@@ -9,7 +9,7 @@ author_profile: true
 {% assign sorted_pubs = site.publications | sort: "pub_year" | reverse %}
 
 ## Research Agenda (2026–2030)
-- Build clinically reliable AI systems that integrate imaging, EHR, and emerging biomedical modalities (e.g., single-cell) for decision support and translational impact.
+- Build clinically reliable AI systems that integrate imaging, EHR, and emerging biomedical modalities for decision support and translational impact.
 - Develop controllable multimodal generative models as compositional tools for simulation, synthesis, and hypothesis-driven data generation.
 - Advance multimodal perception and understanding in dynamic environments, with emphasis on temporal robustness and scalable deployment.
 
