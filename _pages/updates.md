@@ -13,11 +13,9 @@ author_profile: true
 {% assign items = site.data.updates | reverse %}
 {% for u in items %}
   <li>
-    <strong>{{ u.date }}</strong>: 
+    <strong>{{ u.date }}</strong>: {{ u.text }}
     {% if u.link %}
-      <a href="{{ u.link }}">{{ u.text }}</a>
-    {% else %}
-      {{ u.text }}
+      <a class="updates__source-link" href="{{ u.link }}" target="_blank" rel="noopener">(source)</a>
     {% endif %}
   </li>
 {% endfor %}

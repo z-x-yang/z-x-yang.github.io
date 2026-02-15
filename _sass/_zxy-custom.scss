@@ -159,6 +159,12 @@ details > summary {
   font-size: 0.92rem;
 }
 
+.updates__source-link {
+  margin-left: 0.28rem;
+  font-size: 0.84em;
+  white-space: nowrap;
+}
+
 @media (max-width: 640px) {
   .pub-grid {
     grid-template-columns: 1fr;
