@@ -58,7 +58,11 @@
     {% endif %}
 
     {% if highlight_label %}
-      <span class="pub-chip pub-chip--highlight{% if highlight_label == 'Best Paper' %} pub-chip--best-paper{% endif %}">{{ highlight_label }}</span>
+      {% if highlight_label == 'Best Paper' %}
+        <span class="pub-chip pub-chip--best-paper">Best Paper</span>
+      {% else %}
+        <span class="pub-chip pub-chip--highlight">{{ highlight_label }}</span>
+      {% endif %}
     {% endif %}
   </div>
   {% endif %}
