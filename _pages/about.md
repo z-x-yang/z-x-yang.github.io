@@ -12,7 +12,10 @@ I am a Research Fellow in the Department of Biomedical Informatics (DBMI) at Har
 Previously, I was a postdoctoral researcher at CCAI, College of Computer Science and Technology, Zhejiang University (2021–2024), advised by Prof. Yi Yang.
 My research builds reliable and controllable multimodal learning and generation methods, with growing emphasis on translational biomedical applications.
 
-{% assign selected = site.publications | where: "selected", true | sort: "pub_year" | reverse %}
+{% assign selected_base = site.publications | where: "selected", true %}
+{% assign selected_with_ym = selected_base | where_exp: "p", "p.pub_ym" | sort: "pub_ym" | reverse %}
+{% assign selected_without_ym = selected_base | where_exp: "p", "p.pub_ym == nil" | sort: "pub_year" | reverse %}
+{% assign selected = selected_with_ym | concat: selected_without_ym %}
 
 My work is organized around three connected research directions:
 
