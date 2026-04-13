@@ -10,7 +10,9 @@ author_profile: true
 {% endif %}
 
 {% include base_path %}
-{% assign sorted_pubs = site.publications | sort: "pub_year" | reverse %}
+{% assign pubs_with_ym = site.publications | where_exp: "p", "p.pub_ym" | sort: "pub_ym" | reverse %}
+{% assign pubs_without_ym = site.publications | where_exp: "p", "p.pub_ym == nil" | sort: "pub_year" | reverse %}
+{% assign sorted_pubs = pubs_with_ym | concat: pubs_without_ym %}
 {% assign biomed_all = sorted_pubs | where: "topic", "Translational Biomedical AI" %}
 {% assign gen_all = sorted_pubs | where: "topic", "Controllable Multimodal Generation" %}
 {% assign perception_all = sorted_pubs | where: "topic", "Multimodal Perception and Understanding" %}

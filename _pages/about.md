@@ -48,23 +48,35 @@ My work is organized around three connected research directions:
 ## Selected Publications
 
 {% assign catr_title = "CATR: Combinatorial-Dependence Audio-Queried Transformer for Audio-Visual Video Segmentation" %}
+{% assign npj_title = "A Weakly Supervised Transformer for Rare Disease Diagnosis and Subphenotyping from EHRs with Pulmonary Case Studies" %}
+{% assign beyond_title = "Beyond Independent Genes: Learning Module-Inductive Representations for Gene Perturbation Prediction" %}
 {% assign catr_pub = selected | where: "title", catr_title | first %}
+{% assign npj_pub = selected | where: "title", npj_title | first %}
+{% assign beyond_pub = selected | where: "title", beyond_title | first %}
 
 <div class="pub-grid">
+{% assign pinned_count = 0 %}
 {% if catr_pub %}
   {% assign post = catr_pub %}
   {% include publication-item-ap.html %}
+  {% assign pinned_count = pinned_count | plus: 1 %}
+{% endif %}
+{% if npj_pub %}
+  {% assign post = npj_pub %}
+  {% include publication-item-ap.html %}
+  {% assign pinned_count = pinned_count | plus: 1 %}
+{% endif %}
+{% if beyond_pub %}
+  {% assign post = beyond_pub %}
+  {% include publication-item-ap.html %}
+  {% assign pinned_count = pinned_count | plus: 1 %}
 {% endif %}
 
 {% assign shown = 0 %}
-{% if catr_pub %}
-  {% assign regular_limit = 11 %}
-{% else %}
-  {% assign regular_limit = 12 %}
-{% endif %}
+{% assign regular_limit = 12 | minus: pinned_count %}
 
 {% for post in selected %}
-  {% if post.title != catr_title %}
+  {% if post.title != catr_title and post.title != npj_title and post.title != beyond_title %}
     {% include publication-item-ap.html %}
     {% assign shown = shown | plus: 1 %}
     {% if shown >= regular_limit %}
