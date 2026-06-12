@@ -30,4 +30,4 @@ Publications
 
 Service and leadership
 ======
-* Invited Area Chair (AC), ECCV 2026, CVPR 2026
+* Invited Area Chair (AC), ECCV 2026; Outstanding Area Chair, CVPR 2026
