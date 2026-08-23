@@ -30,4 +30,4 @@ Publications
 
 Service and leadership
 ======
-* Invited Area Chair (AC), ECCV 2026; Outstanding Area Chair, CVPR 2026
+* Senior Program Committee Member, AAAI 2027; Invited Area Chair (AC), ECCV 2026; Outstanding Area Chair, CVPR 2026

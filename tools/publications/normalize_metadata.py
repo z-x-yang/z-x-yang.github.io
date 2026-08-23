@@ -28,7 +28,7 @@ SELECTED_FILES = {
 MANUAL_YEAR = {
     "1044.md": 2026,
     "1043.md": 2025,
-    "1045.md": 2025,
+    "1045.md": 2026,
     "0038.md": 2025,
     "0031.md": 2024,
     "0030.md": 2024,
@@ -96,6 +96,7 @@ def normalize_lines(fn: str, lines: list[str]) -> list[str]:
     venue = kv.get("venue", "")
     date_value = kv.get("date", "")
     author = kv.get("author", "")
+    pub_ym = kv.get("pub_ym", "")
 
     topic = infer_topic(title, venue, fn)
     year = infer_year(venue, date_value, fn)
@@ -105,7 +106,7 @@ def normalize_lines(fn: str, lines: list[str]) -> list[str]:
     cleaned = []
     for line in lines:
         key = line.strip().split(":", 1)[0].strip() if ":" in line else ""
-        if key in {"topic", "pub_year", "selected", "author_role"}:
+        if key in {"topic", "pub_year", "pub_ym", "selected", "author_role"}:
             continue
         cleaned.append(line)
 
@@ -122,6 +123,8 @@ def normalize_lines(fn: str, lines: list[str]) -> list[str]:
 
     out.append(f'topic: "{topic}"')
     out.append(f"pub_year: {year}")
+    if pub_ym:
+        out.append(f"pub_ym: {pub_ym}")
     out.append(f"selected: {selected}")
     return out
 
