@@ -19,6 +19,11 @@ Education
 * Ph.D in Computer Science, University of Technology Sydney, Australia, 2021. Supervised by Prof. Yi Yang.
 * B.S. in Electronic and Information Engineering, University of Science and Technology of China, 2018.
 
+Employment
+======
+* ZJU100 Young Professor, College of Artificial Intelligence, Zhejiang University, 2026–present.
+* Research Fellow, Department of Biomedical Informatics (DBMI), Harvard Medical School, Harvard University.
+
 Publications
 ======
 {% assign sorted_pubs = site.publications | sort: "pub_year" | reverse %}

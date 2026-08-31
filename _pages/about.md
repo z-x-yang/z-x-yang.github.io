@@ -8,8 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Fellow in the Department of Biomedical Informatics (DBMI) at Harvard Medical School, Harvard University, working with Prof. Tianxi Cai.
-Previously, I was a postdoctoral researcher at CCAI, College of Computer Science and Technology, Zhejiang University (2021–2024), advised by Prof. Yi Yang.
+I am a ZJU100 Young Professor at the College of Artificial Intelligence, Zhejiang University.
+Previously, I was a Research Fellow in the Department of Biomedical Informatics (DBMI) at Harvard Medical School, Harvard University, working with Prof. Tianxi Cai. Before that, I was a postdoctoral researcher at CCAI, College of Computer Science and Technology, Zhejiang University (2021–2024), advised by Prof. Yi Yang.
 My research builds reliable and controllable multimodal learning and generation methods, with growing emphasis on translational biomedical applications.
 
 {% assign selected_base = site.publications | where: "selected", true %}
