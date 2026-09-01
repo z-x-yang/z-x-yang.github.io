@@ -20,7 +20,7 @@ TRACK_GEN = "Controllable Multimodal Generation"
 TRACK_PERCEPTION = "Multimodal Perception and Understanding"
 
 SELECTED_FILES = {
-    "1044.md", "1043.md", "1042-1.md", "1045.md",
+    "1044.md", "1043.md", "1042-1.md", "1045.md", "2026-reclip.md",
     "1038.md", "1040-0.md", "1040-1.md", "1042-0.md", "1042-2.md", "0033.md", "0034.md",
     "1128.md", "1034.md", "1011.md", "1006.md", "1003.md", "1033.md", "1039.md",
 }
@@ -46,7 +46,7 @@ def parse_frontmatter(text: str) -> tuple[str, list[str], str]:
 
 def infer_topic(title: str, venue: str, fn: str) -> str:
     t = f"{title} {venue}".lower()
-    biomed_kw = ["clinical", "medical", "medsam", "x-ray", "ehr", "disease", "pulmonary", "digital medicine", "clines", "biomedical"]
+    biomed_kw = ["clinical", "medical", "medicinal", "medsam", "x-ray", "ehr", "disease", "pulmonary", "digital medicine", "clines", "biomedical", "protein-protein"]
     gen_kw = ["diffusion", "text-to-image", "image editing", "insert anything", "in-context edit", "dreamrenderer", "3dis", "migc", "generative", "gaussian", "avatar", "matting", "nerf", "face generation", "image synthesis"]
 
     if any(k in t for k in biomed_kw):
