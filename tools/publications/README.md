@@ -11,6 +11,20 @@ The homepage now depends on structured fields in `_publications/*.md`:
 
 Without these fields, ordering and grouping can silently drift.
 
+Explicit frontmatter values are authoritative. `normalize_metadata.py` fills
+missing fields only; it does not overwrite curated topic, year, selected status,
+or author role. Keyword/name inference is a default for an absent value, not
+publication evidence. This preserves manually verified co-first/corresponding
+roles and editorial selections when the heuristic's keyword or filename lists
+are older than the content. In particular, HTML emphasis around an author's
+name must not cause an explicit role to disappear.
+
+Regression gate: `python3 -m unittest discover -s tools/publications -p 'test_*.py'`.
+The tests cover explicit values, inferred missing values, idempotence, and every
+current publication file. The 2026-09-20 fix reproduced 22 existing-file rewrites
+before the change; afterwards the same files reported `changed=0` with no content
+rewrites.
+
 ## Commands
 
 From repo root:

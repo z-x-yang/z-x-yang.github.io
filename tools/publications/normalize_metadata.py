@@ -96,36 +96,18 @@ def normalize_lines(fn: str, lines: list[str]) -> list[str]:
     venue = kv.get("venue", "")
     date_value = kv.get("date", "")
     author = kv.get("author", "")
-    pub_ym = kv.get("pub_ym", "")
-
-    topic = infer_topic(title, venue, fn)
-    year = infer_year(venue, date_value, fn)
-    selected = "true" if fn in SELECTED_FILES else "false"
+    # Explicit frontmatter is curated truth; inference only fills absent fields.
+    out = list(lines)
     author_role = infer_author_role(author)
-
-    cleaned = []
-    for line in lines:
-        key = line.strip().split(":", 1)[0].strip() if ":" in line else ""
-        if key in {"topic", "pub_year", "pub_ym", "selected", "author_role"}:
-            continue
-        cleaned.append(line)
-
-    out = []
-    inserted_author_role = False
-    for line in cleaned:
-        out.append(line)
-        if line.strip().startswith("author:") and author_role:
-            out.append(f'author_role: "{author_role}"')
-            inserted_author_role = True
-
-    if author_role and not inserted_author_role:
+    if "author_role" not in kv and author_role:
         out.append(f'author_role: "{author_role}"')
-
-    out.append(f'topic: "{topic}"')
-    out.append(f"pub_year: {year}")
-    if pub_ym:
-        out.append(f"pub_ym: {pub_ym}")
-    out.append(f"selected: {selected}")
+    if "topic" not in kv:
+        out.append(f'topic: "{infer_topic(title, venue, fn)}"')
+    if "pub_year" not in kv:
+        out.append(f"pub_year: {infer_year(venue, date_value, fn)}")
+    if "selected" not in kv:
+        selected = "true" if fn in SELECTED_FILES else "false"
+        out.append(f"selected: {selected}")
     return out
 
 
