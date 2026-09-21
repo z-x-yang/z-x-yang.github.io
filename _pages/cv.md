@@ -36,5 +36,5 @@ Publications
 
 Service and leadership
 ======
-* Invited Area Chair, ACL 2027; Senior Program Committee Member, AAAI 2027; Area Chair, ECCV 2026; Outstanding Area Chair, CVPR 2026
+* Invited Area Chair, ICLR 2027; Senior Program Committee Member, AAAI 2027; Area Chair, ECCV 2026; Outstanding Area Chair, CVPR 2026
 * Workshop Organizer, Pixel-level Video Understanding in the Wild Challenge at CVPR 2023–2026
